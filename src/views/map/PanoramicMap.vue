@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- 地图 -->
-    <nx-map></nx-map>
+    <map-nav></map-nav>
     <!-- 站点目录 -->
     <dir-tree></dir-tree>
     <!-- 图例信息 -->
@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import nxMap from '@/components/nx-map/index'
+import MapNav from './components/map-nav'
 import DirTree from './components/dir-tree'
 import FigureInfo from './components/figure-info'
 import AlarmInfo from './components/alarm-info'
@@ -20,7 +20,7 @@ import AlarmInfo from './components/alarm-info'
 export default {
   name: 'PanoramicMap',
   components: {
-    nxMap,
+    MapNav,
     DirTree,
     FigureInfo,
     AlarmInfo
