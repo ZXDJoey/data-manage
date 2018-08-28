@@ -67,7 +67,7 @@ export const constantRouterMap = [
       {
         path: 'map',
         name: 'map',
-        component: () => import('@/views/map/map'),
+        component: () => import('@/views/map/panoramicmap'),
         meta: { title: 'map', icon: 'map' }
       }
     ]
