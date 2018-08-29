@@ -15,7 +15,7 @@ export default {
 }
 
 </script>
-<style>
+<style lang="scss">
   /*#app .app-router-view {*/
     /*position: absolute;*/
     /*top: 0;*/
