@@ -14,7 +14,7 @@
 
       <el-dropdown class="avatar-container right-menu-item" trigger="click">
         <div class="avatar-wrapper">
-        <img class="user-avatar" src="https://mgbq.github.io/nx-admin-site/home.png">
+          <img class="user-avatar" src="https://mgbq.github.io/nx-admin-site/home.png">
           <i class="el-icon-caret-bottom"></i>
         </div>
         <el-dropdown-menu slot="dropdown">
@@ -23,11 +23,11 @@
               home
             </el-dropdown-item>
           </router-link>
-          <a target='_blank' href="https://github.com/mgbq/nxAdmin-template/">
+          <!-- <a target='_blank' href="https://github.com/zxdjoey/data-manage/">
             <el-dropdown-item>
               github地址
             </el-dropdown-item>
-          </a>
+          </a> -->
           <el-dropdown-item divided>
             <span @click="logout" style="display:block;">退出</span>
           </el-dropdown-item>
