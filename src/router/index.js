@@ -28,29 +28,30 @@ export const constantRouterMap = [
   {
     path: '',
     component: Layout,
-    redirect: '/dashboard/dashboard'
+    // redirect: '/dashboard/dashboard'
+    redirect: '/map/map'
   },
   { path: '/login', component: () => import('@/views/login'), name: '智慧城市大数据', hidden: true },
   { path: '/404', component: () => import('@/views/errorPage/404'), hidden: true },
   { path: '/401', component: () => import('@/views/errorPage/401'), hidden: true },
 
   // 首页
-  {
-    path: '/dashboard',
-    component: Layout,
-    meta: {
-      title: 'dashboard',
-      icon: 'dashboard'
-    },
-    children: [
-      {
-        path: 'dashboard',
-        name: 'dashboard',
-        component: () => import('@/views/dashboard/dashboard'),
-        meta: { title: 'dashboard', icon: 'dashboard' }
-      }
-    ]
-  },
+  // {
+  //   path: '/dashboard',
+  //   component: Layout,
+  //   meta: {
+  //     title: 'dashboard',
+  //     icon: 'dashboard'
+  //   },
+  //   children: [
+  //     {
+  //       path: 'dashboard',
+  //       name: 'dashboard',
+  //       component: () => import('@/views/dashboard/dashboard'),
+  //       meta: { title: 'dashboard', icon: 'dashboard' }
+  //     }
+  //   ]
+  // },
 
   // 全景地图
   {
