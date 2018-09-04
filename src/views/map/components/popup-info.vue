@@ -22,7 +22,7 @@ export default {
 <style lang="scss" scoped>
   .winContainer {
     position: absolute;
-    top: 280px;
+    top: 320px;
     left: 840px;
     width: 400px;
     height: 340px;
@@ -30,7 +30,8 @@ export default {
     border-radius: 5px;
     box-shadow: 0 0px 10px rgba(0,0,0,0.2);
     .winTitle {
-
+      width: 20px;
+      line-height: 20px;
     }
   }
 </style>
