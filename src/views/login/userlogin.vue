@@ -47,7 +47,7 @@ export default {
     return {
       loginForm: {
         username: 'admin',
-        password: '123456'
+        password: ''
       },
       checked: false,
       code: {
@@ -89,7 +89,7 @@ export default {
       this.$refs.loginForm.validate(valid => {
         if (valid) {
           this.$store.dispatch('Login', this.loginForm).then(res => {
-            this.$router.push({ path: '/dashboard/dashboard' })
+            this.$router.push({ path: '/map/map' })
           })
         }
       })
@@ -98,6 +98,8 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+  .el-input {
+    width: 100%;
+  }
 </style>

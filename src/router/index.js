@@ -18,13 +18,6 @@ import Layout from '../views/layout/Layout'
   }
 **/
 export const constantRouterMap = [
-  // {
-  //   path: '/',
-  //   component: Layout,
-  //   redirect: '/login',
-  //   name: 'login',
-  //   hidden: true
-  // },
   {
     path: '',
     component: Layout,
@@ -33,38 +26,20 @@ export const constantRouterMap = [
   },
   { path: '/login', component: () => import('@/views/login'), name: '智慧城市大数据', hidden: true },
   { path: '/404', component: () => import('@/views/errorPage/404'), hidden: true },
-  { path: '/401', component: () => import('@/views/errorPage/401'), hidden: true },
-
-  // 首页
-  // {
-  //   path: '/dashboard',
-  //   component: Layout,
-  //   meta: {
-  //     title: 'dashboard',
-  //     icon: 'dashboard'
-  //   },
-  //   children: [
-  //     {
-  //       path: 'dashboard',
-  //       name: 'dashboard',
-  //       component: () => import('@/views/dashboard/dashboard'),
-  //       meta: { title: 'dashboard', icon: 'dashboard' }
-  //     }
-  //   ]
-  // },
 
   // 全景地图
   {
     path: '/map',
     component: Layout,
     meta: {
-      title: 'map'
+      title: 'map',
+      icon: 'map'
     },
     children: [
       {
         path: 'map',
         name: 'map',
-        component: () => import('@/views/map/panoramicmap'),
+        component: () => import('@/views/map/map'),
         meta: { title: 'map', icon: 'map' }
       }
     ]
@@ -225,19 +200,18 @@ export default new Router({
 })
 
 export const asyncRouterMap = [
-  {
-    path: '/error',
-    component: Layout,
-    redirect: 'noredirect',
-    name: 'errorPages',
-    meta: {
-      title: 'errorPages',
-      icon: '404'
-    },
-    children: [
-      { path: '401', component: () => import('@/views/errorPage/401'), name: 'page401', meta: { title: 'page401', noCache: true }},
-      { path: '404', component: () => import('@/views/errorPage/404'), name: 'page404', meta: { title: 'page404', noCache: true }}
-    ]
-  },
-  { path: '*', redirect: '/404', hidden: true }
+  // {
+  //   path: '/error',
+  //   component: Layout,
+  //   redirect: 'noredirect',
+  //   name: 'errorPages',
+  //   meta: {
+  //     title: 'errorPages',
+  //     icon: '404'
+  //   },
+  //   children: [
+  //     { path: '404', component: () => import('@/views/errorPage/404'), name: 'page404', meta: { title: 'page404', noCache: true }}
+  //   ]
+  // },
+  // { path: '*', redirect: '/404', hidden: true }
 ]
