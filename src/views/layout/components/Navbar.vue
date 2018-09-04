@@ -5,13 +5,6 @@
     <nx-breadcrumb class="breadcrumb-container"></nx-breadcrumb>
 
     <div class="right-menu">
-
-      <!-- <nx-github style="margin-top:2px" class="nx-help right-menu-item"></nx-github> -->
-      <!-- <error-log class="errLog-container right-menu-item"></error-log> -->
-      <!-- <nx-help class="nx-help right-menu-item" /> -->
-      <!-- <lang-select class="international right-menu-item"></lang-select> -->
-      <!-- <nx-lang-select class="international right-menu-item"></nx-lang-select> -->
-
       <el-dropdown class="avatar-container right-menu-item" trigger="click">
         <div class="avatar-wrapper">
           <img class="user-avatar" src="https://mgbq.github.io/nx-admin-site/home.png">
@@ -23,11 +16,6 @@
               home
             </el-dropdown-item>
           </router-link>
-          <!-- <a target='_blank' href="https://github.com/zxdjoey/data-manage/">
-            <el-dropdown-item>
-              github地址
-            </el-dropdown-item>
-          </a> -->
           <el-dropdown-item divided>
             <span @click="logout" style="display:block;">退出</span>
           </el-dropdown-item>
@@ -39,20 +27,16 @@
 
 <script>
 import { mapGetters } from 'vuex'
-
 import nxBreadcrumb from '@/components/nx-breadcrumb'
 import nxHamburger from '@/components/nx-hamburger'
-import nxHelp from '@/components/nx-help/index'
-
 import nxLangSelect from '@/components/nx-lang-select/index'
-
 import nxGithub from '@/components/nx-github/index'
+
 export default {
   name: 'navBar',
   components: {
     nxBreadcrumb,
     nxHamburger,
-    nxHelp,
     nxLangSelect,
     nxGithub
   },
