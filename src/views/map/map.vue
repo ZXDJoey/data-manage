@@ -8,6 +8,7 @@
     <figure-info></figure-info>
     <!-- 报警信息 -->
     <alarm-info></alarm-info>
+    <popup-info></popup-info>
   </div>
 </template>
 
@@ -16,6 +17,7 @@ import MapNav from './components/map-nav'
 import DirTree from './components/dir-tree'
 import FigureInfo from './components/figure-info'
 import AlarmInfo from './components/alarm-info'
+import PopupInfo from './components/popup-info'
 
 export default {
   name: 'PanoramicMap',
@@ -23,7 +25,8 @@ export default {
     MapNav,
     DirTree,
     FigureInfo,
-    AlarmInfo
+    AlarmInfo,
+    PopupInfo
   }
 }
 </script>

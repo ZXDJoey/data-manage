@@ -5,6 +5,8 @@
         <img src="../../assets/images/home/logo.png" width="120px" height="100px" />
       </div>
       <h1 class="login-info-title">{{website.info.title}}</h1>
+      <h5>版权所有 ©2016 恒天益科技（深圳）有限公司</h5>
+      <h5 class="mg_0">版本号：V1.0</h5>
     </div>
     <div class="login-border animated fadeInRight">
       <div class="login-main">
@@ -70,6 +72,11 @@ export default {
   .login-info-title {
     color: #42b983;
     margin: 0;
+  }
+  h5 {
+    margin: 0;
+    padding-top: 12px; 
+    text-align: center;
   }
 }
 .login-info-item {
