@@ -29,7 +29,6 @@
 import { mapGetters } from 'vuex'
 import nxBreadcrumb from '@/components/nx-breadcrumb'
 import nxHamburger from '@/components/nx-hamburger'
-import nxLangSelect from '@/components/nx-lang-select/index'
 import nxGithub from '@/components/nx-github/index'
 
 export default {
@@ -37,7 +36,6 @@ export default {
   components: {
     nxBreadcrumb,
     nxHamburger,
-    nxLangSelect,
     nxGithub
   },
   computed: {
