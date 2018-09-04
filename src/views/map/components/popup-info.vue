@@ -30,8 +30,9 @@ export default {
     border-radius: 5px;
     box-shadow: 0 0px 10px rgba(0,0,0,0.2);
     .winTitle {
-      width: 20px;
+      height: 20px;
       line-height: 20px;
+
     }
   }
 </style>
