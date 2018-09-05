@@ -160,6 +160,6 @@ export default {
     left: 0;
     z-index: 0;
     text-align: left;
-    height: 768px;
+    height: 650px;
   }
 </style>
