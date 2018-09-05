@@ -14,6 +14,8 @@
 
 <script>
 import BMap from 'BMap'
+import BMAP_NAVIGATION_CONTROL_SMALL from 'BMAP_NAVIGATION_CONTROL_SMALL'
+import BMAP_ANCHOR_BOTTOM_RIGHT from 'BMAP_ANCHOR_BOTTOM_RIGHT'
 import {
   getReductionIcon,
   getLightIcon } from '@/utils/map'

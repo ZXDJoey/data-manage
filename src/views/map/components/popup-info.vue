@@ -97,14 +97,14 @@ export default {
       position: absolute;
       top: 0;
       left: 6px;
-      min-width: 360px;
+      min-width: 330px;
       background: #fff;
       border-radius: 5px;
       box-shadow: 0 0px 10px rgba(0,0,0,0.2);
       .cont_colse {
         position: absolute;
-        right: -12px;
-        top: -12px;
+        right: -13px;
+        top: -13px;
         width: 26px;
         height: 26px;
         font-size: 16px;
@@ -130,7 +130,7 @@ export default {
         }
       }
       .cont_list {
-        padding: 10px 20px;
+        padding: 10px 20px 0 20px;
         .alarm_info {
           border-top: 1px solid #dce0e3;
         }

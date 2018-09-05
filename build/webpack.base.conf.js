@@ -26,7 +26,9 @@ module.exports = {
   },
   // 百度地图
   externals: {
-    BMap: 'BMap'
+    BMap: 'BMap',
+    BMAP_NAVIGATION_CONTROL_SMALL: 'BMAP_NAVIGATION_CONTROL_SMALL',
+    BMAP_ANCHOR_BOTTOM_RIGHT: 'BMAP_ANCHOR_BOTTOM_RIGHT'
   },
   output: {
     path: config.build.assetsRoot,
