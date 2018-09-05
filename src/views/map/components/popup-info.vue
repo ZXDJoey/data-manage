@@ -8,7 +8,7 @@
         <div class="cont_colse">x</div>
         <div class="cont_title">
           <strong>一</strong>
-          <span>窨井站点：XZ07-1</span>
+          <span>窨井站点：FT18</span>
         </div>
         <div class="cont_list">
           <ul>
@@ -64,10 +64,16 @@
 <script>
 export default {
   name: 'Popup',
+  props: {
+
+  },
   data() {
     return {
 
     }
+  },
+  mounted() {
+
   },
   methods: {
 
@@ -120,7 +126,7 @@ export default {
         font-size: 16px;
         line-height: 32px;
         margin-top: -20px;
-        margin-left: 30px;
+        margin-left: 28px;
         padding: 0 14px;
         color: #fff;
         background-color:#6959cd;

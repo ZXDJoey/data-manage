@@ -65,7 +65,7 @@ export default {
       // 缩略地图
       const OverOpt = { anchor: BMAP_ANCHOR_BOTTOM_RIGHT, offset: new BMap.Size(12, 160) }
       this.map.addControl(new BMap.OverviewMapControl(OverOpt))
-      this.map.setMapStyle({ style: 'googlelite' }) // 地图主题
+      this.map.setMapStyle({ style: 'googlelite' }) // google主题
     },
     getMapPoint() {
       axios.get('../src/components/nx-map/mapPoint.json')
