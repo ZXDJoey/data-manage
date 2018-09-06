@@ -1,16 +1,4 @@
 export default {
-  navbar: {
-    title: 'Automatic charging system',
-    languageSwitch: 'languageSwitch',
-    theme: 'Theme'
-  },
-  skin: {
-    Blue: 'Blue',
-    Green: 'Green',
-    Red: 'Red',
-    Purple: 'Purple',
-    Default: 'Default'
-  },
   route: {
     list: 'list',
     Digitalanimation: 'Digitalanimation',
@@ -65,7 +53,6 @@ export default {
     complexTable: 'Complex Table',
     treeTable: 'Tree Table',
     errorPages: 'Error Pages',
-    page401: '401',
     page404: '404',
     thirdPartyWebsite: 'thirdPartyWebsite',
     charts: 'Charts',
@@ -74,36 +61,13 @@ export default {
     excel: 'Excel',
     exportExcel: 'Export Excel',
     selectExcel: 'Export Selected',
-    uploadExcel: 'Upload Excel',
-    zip: 'Zip',
-    exportZip: 'Export Zip',
-    i18n: 'i18n'
-  },
-  excel: {
-    export: 'Export',
-    selectedExport: 'Export selected items',
-    placeholder: 'Please enter the file name(default excel-list)'
-  },
-  zip: {
-    export: 'Export',
-    placeholder: 'Please enter the file name(default file)'
+    uploadExcel: 'Upload Excel'
   },
   permission: {
     roles: 'Your roles',
     switchRoles: 'Switch roles'
   },
-  components: {
-    documentation: 'documentation',
-    tinymceTips: 'tinymceTips',
-    dropzoneTips: 'dropzoneTips',
-    stickyTips: 'stickyTips',
-    backToTopTips1: 'backToTopTips1',
-    backToTopTips2: 'backToTopTips2',
-    imageUploadTips: 'imageUploadTips'
-  },
   tagsView: {
-    close: 'Close',
-    closeOthers: 'Close Others',
-    closeAll: 'Close All'
+    close: 'Close'
   }
 }

@@ -16,17 +16,12 @@ service.interceptors.request.use(config => {
   }
   return config
 }, error => {
-  // Do something with request error
-  console.log(error) // for debug
   return Promise.reject(error)
 })
 
 // respone拦截器
 service.interceptors.response.use(
   response => {
-  /**
-  * code为非20000是抛错 可结合自己业务进行修改
-  */
     const res = response.data
     if (res.code !== 0) {
       Message({
@@ -53,7 +48,6 @@ service.interceptors.response.use(
     }
   },
   error => {
-    console.log('err' + error)// for debug
     Message({
       message: error.message,
       type: 'error',

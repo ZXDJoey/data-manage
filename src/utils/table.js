@@ -1,5 +1,5 @@
 var SIGN_REGEXP = /([yMdhsm])(\1*)/g
-var DEFAULT_PATTERN = 'yyyy-MM-dd'
+var DEFAULT_PATTERN = 'yyyy-mm-dd'
 function padding(s, len) {
   var lens = len - (s + '').length
   for (var i = 0; i < lens; i++) { s = '0' + s }
@@ -17,7 +17,6 @@ export default {
     return context == null || context === '' || context === 'undefined' ? '' : context
   },
   formatDate: {
-
     format: function(date, pattern) {
       pattern = pattern || DEFAULT_PATTERN
       return pattern.replace(SIGN_REGEXP, function($0) {

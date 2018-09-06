@@ -9,8 +9,8 @@ Vue.prototype.$echarts = echarts
 import 'echarts/theme/macaron.js'
 
 import 'normalize.css/normalize.css'// A modern alternative to CSS resets
-import '@/styles/index.scss' // global css
-import './mock' // simulation data
+import '@/styles/index.scss' // 全局 css
+import './mock' // mock 数据
 import '@/assets/library/font-awesome-4.7.0/css/font-awesome.min.css'
 import App from './App'
 import router from './router'
@@ -23,9 +23,9 @@ import {
   iconfontVersion } from '@/config/env'
 
 import '@/icons'
-import '@/permission' // permission control
+import '@/permission'
 
-import * as filters from './filters' // global filters
+import * as filters from './filters' // 全局 filters
 Object.keys(filters).forEach(key => {
   Vue.filter(key, filters[key])
 })
@@ -34,7 +34,6 @@ Vue.use(ElementUI, { locale })
 iconfontVersion.forEach(ele => { loadStyle(iconfontUrl.replace('$key', ele)) })
 Vue.use(ElementUI, {
   size: 'medium'
-  // i18n: (key, value) => i18n.t(key, value)
 })
 
 Vue.config.productionTip = false

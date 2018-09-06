@@ -1,4 +1,4 @@
-// set function parseTime,formatTime to filter
+// 时间 格式化
 export { parseTime, formatTime } from '@/utils'
 
 function pluralize(time, label) {
@@ -19,7 +19,7 @@ export function timeAgo(time) {
   }
 }
 
-/* 数字 格式化*/
+// 数字 格式化
 export function numberFormatter(num, digits) {
   const si = [
     { value: 1E18, symbol: 'E' },
