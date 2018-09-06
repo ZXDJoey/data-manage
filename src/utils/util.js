@@ -1,7 +1,6 @@
 /**
  * 动态插入css
  */
-
 export const loadStyle = url => {
   const link = document.createElement('link')
   link.type = 'text/css'
@@ -10,6 +9,7 @@ export const loadStyle = url => {
   const head = document.getElementsByTagName('head')[0]
   head.appendChild(link)
 }
+
 /**
  * 设置浏览器头部标题
  */
