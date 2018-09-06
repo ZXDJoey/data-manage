@@ -22,7 +22,7 @@ export const constantRouterMap = [
     path: '',
     component: Layout,
     // redirect: '/dashboard/dashboard'
-    redirect: '/map/map'
+    redirect: '/map/PanoramicMap'
   },
   { path: '/login', component: () => import('@/views/login'), name: '智慧城市大数据', hidden: true },
   { path: '/404', component: () => import('@/views/errorPage/404'), hidden: true },
@@ -37,9 +37,9 @@ export const constantRouterMap = [
     },
     children: [
       {
-        path: 'map',
+        path: 'PanoramicMap',
         name: 'map',
-        component: () => import('@/views/map/map'),
+        component: () => import('@/views/map/PanoramicMap'),
         meta: { title: 'map', icon: 'map' }
       }
     ]

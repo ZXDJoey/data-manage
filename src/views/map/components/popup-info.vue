@@ -1,11 +1,11 @@
 <template>
   <div>
-    <div class="win">
+    <div class="win" v-show="isShow">
       <div class="triangle_border_down">
         <span></span>
       </div>
       <div class="win_container">
-        <div class="cont_colse">x</div>
+        <div class="cont_colse" @click="handleColse">x</div>
         <div class="cont_title">
           <strong>一</strong>
           <span>窨井站点：FT18</span>
@@ -69,14 +69,17 @@ export default {
   },
   data() {
     return {
-
+      isShow: ''
     }
   },
   mounted() {
-
+    this.handleColse()
   },
   methods: {
-
+    handleColse() {
+      this.isShow = !this.isShow
+      console.log(this.isShow)
+    }
   }
 }
 </script>

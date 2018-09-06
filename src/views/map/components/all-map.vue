@@ -1,14 +1,6 @@
 <template>
   <div>
-    <!-- 地图 -->
-    <div id="allmap"></div>
-    <!-- 站点目录 -->
-    <dir-tree></dir-tree>
-    <!-- 图例信息 -->
-    <figure-info></figure-info>
-    <!-- 报警信息 -->
-    <alarm-info></alarm-info>
-    <popup-info v-show="isShow"></popup-info>
+    <div id="allmap" @click="handleSwitchWin"></div>
   </div>
 </template>
 
@@ -21,19 +13,8 @@ import {
   getLightIcon } from '@/utils/map'
 import axios from 'axios'
 
-import DirTree from './components/dir-tree'
-import FigureInfo from './components/figure-info'
-import AlarmInfo from './components/alarm-info'
-import PopupInfo from './components/popup-info'
-
 export default {
-  name: 'PanoramicMap',
-  components: {
-    DirTree,
-    FigureInfo,
-    AlarmInfo,
-    PopupInfo
-  },
+  name: 'all-map',
   data() {
     return {
       map: '',
@@ -65,7 +46,7 @@ export default {
       // 缩略地图
       const OverOpt = { anchor: BMAP_ANCHOR_BOTTOM_RIGHT, offset: new BMap.Size(12, 160) }
       this.map.addControl(new BMap.OverviewMapControl(OverOpt))
-      this.map.setMapStyle({ style: 'googlelite' }) // google主题
+      this.map.setMapStyle({ style: 'googlelite' }) // 地图主题
     },
     getMapPoint() {
       axios.get('../src/components/nx-map/mapPoint.json')
@@ -126,7 +107,7 @@ export default {
         this.map.removeOverlay(marker)
         this.lightMarker(marker.Record)
         // getRealData(marker.Record)
-        this.isShow = true
+        this.isShow = !this.isShow
       })
     },
     // 高亮图标
@@ -170,6 +151,9 @@ export default {
           // getRealData(marker.Record)
         })
       }
+    },
+    handleSwitchWin() {
+      this.$emit('switchWin', this.isShow)
     }
   }
 }
@@ -183,6 +167,6 @@ export default {
     left: 0;
     z-index: 0;
     text-align: left;
-    height: 650px;
+    height: 668px;
   }
 </style>

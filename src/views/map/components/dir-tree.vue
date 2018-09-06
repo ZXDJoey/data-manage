@@ -86,7 +86,7 @@ export default {
 
 <style scoped>
   .dir_tree {
-    position: fixed;
+    position: absolute;
     bottom: 10px;
     margin-left: 12px;
     width: 200px;

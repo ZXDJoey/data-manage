@@ -1,12 +1,17 @@
 <template>
   <div class="app-container">
-    cc1
+    <nx-chart></nx-chart>
   </div>
 </template>
 
 <script>
+import nxChart from '@/components/nx-chart/index'
+
 export default {
-  name: 'DataCurve'
+  name: 'DataCurve',
+  components: {
+    nxChart
+  }
 }
 </script>
 

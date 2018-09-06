@@ -89,7 +89,7 @@ export default {
       this.$refs.loginForm.validate(valid => {
         if (valid) {
           this.$store.dispatch('Login', this.loginForm).then(res => {
-            this.$router.push({ path: '/map/map' })
+            this.$router.push({ path: '/map/PanoramicMap' })
           })
         }
       })
