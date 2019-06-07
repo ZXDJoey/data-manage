@@ -1,4 +1,4 @@
-#  vue-DataManage项目
+#  vue-DataManage
 
 ##  一、目录结构
 
