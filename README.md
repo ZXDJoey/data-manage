@@ -1,4 +1,4 @@
-#  data-manage项目
+#  vue-DataManage项目
 
 ##  一、目录结构
 
@@ -46,9 +46,3 @@ npm run dev
 // 打包
 npm run build:prod
 ```
-
-##  三、布局
-
-####  对应代码  --  [@/views/layout]
-
-![屏幕快照 2018-09-06 下午5.02.33](/Users/joey/Desktop/屏幕快照 2018-09-06 下午5.02.33.png)
